@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'acromregular';
+    src: url('../fonts/acrom/acrom-regular/acrom-regular.eot');
+    src: url('../fonts/acrom/acrom-regular/acrom-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/acrom/acrom-regular/acrom-regular.woff2') format('woff2'),
+         url('../fonts/acrom/acrom-regular/acrom-regular.woff') format('woff'),
+         url('../fonts/acrom/acrom-regular/acrom-regular.ttf') format('truetype'),
+         url('../fonts/acrom/acrom-regular/acrom-regular.svg#acromregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'acrombold';
+    src: url('../fonts/acrom/acrom-bold/acrom-bold.eot');
+    src: url('../fonts/acrom/acrom-bold/acrom-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/acrom/acrom-bold/acrom-bold.woff2') format('woff2'),
+         url('../fonts/acrom/acrom-bold/acrom-bold.woff') format('woff'),
+         url('../fonts/acrom/acrom-bold/acrom-bold.ttf') format('truetype'),
+         url('../fonts/acrom/acrom-bold/acrom-bold.svg#acrombold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+ymaps[class$="-copyright"] {
+    display: none;
+}
+
+.layout{
+  	flex: 1 0 auto;
+}
+
+
+.wrapper{
+
+}
+.container-fluid{
+	width: 100%;
+	max-width: 1216px;
+    padding: 0 20px;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+.page-content{
+	padding: 20px 0;
+}
+
