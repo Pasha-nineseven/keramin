@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/header.html
+		<main class="page-content workarea">
+			<div class="container-fluid">
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__item">Главная</a>
+					<span class="breadcrumbs__item">Где купить</span>
+				</div>
+				<div class="page-title">
+					<h1>Где купить</h1>
+				</div>
+				<!-- CONTENT -->
+                <div class="where">
+                    <div class="resp-tabs">
+        
+                            <ul>
+                                <li>
+                                    <a href="#tab-1"><span>Партнеры</span></a>
+                                </li>
+                                <li>
+                                    <a href="#tab-2"><span>Точки продаж</span></a>
+                                </li>
+                            </ul>
+ 
+                        <div id="tab-1">
+                            <div class="select-add">
+                                <div class="select-add__item">
+                                    <a href="#" class="select-add__link js-select-toggle">Беларусь</a>
+                                    <div class="select-add-sub">
+                                        <div class="select-add-sub__wrap">
+                                            <a href="#" class="select-add-sub__link">Россия</a>
+                                            <a href="#" class="select-add-sub__link">Украина</a>
+                                            <a href="#" class="select-add-sub__link">Казахстан</a>
+                                            <a href="#" class="select-add-sub__link">Литва</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select-add__item">
+                                    <a href="#" class="select-add__link js-select-toggle">Барановичи</a>
+                                    <div class="select-add-sub">
+                                        <div class="select-add-sub__wrap">
+                                            <a href="#" class="select-add-sub__link">Минск</a>
+                                            <a href="#" class="select-add-sub__link">Брест</a>
+                                            <a href="#" class="select-add-sub__link">Гродно</a>
+                                            <a href="#" class="select-add-sub__link">Могилев</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select-add__item">
+                                    <a href="#" class="btn">Показать на карте</a>
+                                </div>
+                            </div>
+                            <div class="page-map-wrap">
+                                <div id="map" class="page-map"> </div>
+                                <div class="page-map-about">
+                                    <h5>Магазин<br> «Керамин-Барановичи»</h5>
+                                    <div class="page-map-about__list">
+                                        <div class="page-map-about__item">
+                                            <div class="page-map-about-phones">
+                                                <div class="page-map-about-phones__item">
+                                                    +375 (163) 66-97-63
+                                                </div>
+                                                <div class="page-map-about-phones__item">
+                                                    +375 (163) 66-97-62
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="page-map-about__item">
+                                            <div class="page-map-about-mail">
+                                                info@keramin.by
+                                            </div>
+                                        </div>
+                                        <div class="page-map-about__item">
+                                            <div class="page-map-about-address">
+                                                г. Барановичи, ул. Комсомольская, 5
+                                            </div>
+                                        </div>
+                                        <div class="page-map-about__item">
+                                            <div class="page-map-about-time">
+                                                <div class="page-map-about-time__item">
+                                                    <span>пн-пт:</span> 10:00-20:00
+                                                </div>
+                                                <div class="page-map-about-time__item">
+                                                    <span>сб:</span> 10:00-18:00
+                                                </div>
+                                                <div class="page-map-about-time__item">
+                                                    <span>вс:</span> 10:00-16:00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2">
+                            <div class="select-add">
+                                <div class="select-add__item">
+                                    <a href="#" class="select-add__link js-select-toggle">Беларусь</a>
+                                    <div class="select-add-sub">
+                                        <div class="select-add-sub__wrap">
+                                            <a href="#" class="select-add-sub__link">Россия</a>
+                                            <a href="#" class="select-add-sub__link">Украина</a>
+                                            <a href="#" class="select-add-sub__link">Казахстан</a>
+                                            <a href="#" class="select-add-sub__link">Литва</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select-add__item">
+                                    <a href="#" class="select-add__link js-select-toggle">Барановичи</a>
+                                    <div class="select-add-sub">
+                                        <div class="select-add-sub__wrap">
+                                            <a href="#" class="select-add-sub__link">Минск</a>
+                                            <a href="#" class="select-add-sub__link">Брест</a>
+                                            <a href="#" class="select-add-sub__link">Гродно</a>
+                                            <a href="#" class="select-add-sub__link">Могилев</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select-add__item">
+                                    <a href="#" class="btn">Показать на карте</a>
+                                </div>
+                            </div>
+                            <div class="page-map-wrap">
+                                <div id="points-map" class="page-map"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+				<!-- END CONTENT -->
+			</div>
+		</main>
+	</div><!-- END LAYOUT-->
+	//= template/footer.html
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/libs/libs.min.js"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/pages.js"></script>
+</body>
+</html>

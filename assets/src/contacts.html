@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/header.html
+		<main class="page-content workarea">
+			<div class="container-fluid">
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__item">Главная</a>
+					<span class="breadcrumbs__item">Контакты</span>
+				</div>
+				<div class="page-title">
+					<h1>Контакты</h1>
+				</div>
+				<!-- CONTENT -->
+                <div class="contacts">
+                    <div class="contacts__top">
+                        <div class="contacts-select">
+                            <a href="#" class="contacts-select__t js-contacts-select">Головной офис</a>
+                            <div class="contacts-select__list">
+                                <div class="contacts-select__wrap">
+                                    <div class="contacts-select__item">
+                                        <a href="" class="contacts-select__link">Производство керамической плитки</a>
+                                    </div>
+                                    <div class="contacts-select__item">
+                                        <a href="" class="contacts-select__link">Завод «Стройфарфор» (санитарная керамика)</a>
+                                    </div>
+                                    <div class="contacts-select__item">
+                                        <a href="" class="contacts-select__link">Минский керамический завод (керамический кирпич)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__list">
+                        <div class="contacts__item">
+                            <div class="contacts__in">
+                                <div class="contacts__title">Приемная</div>
+                                <div class="contacts__info">
+                                    <div class="contacts__half">
+                                        <div class="contacts__phones">
+                                            <div class="contacts__phone">+375 (163) 66-97-63</div>
+                                            <div class="contacts__phone">+375 (163) 66-97-62</div>
+                                        </div>
+                                        <div class="contacts__mail">
+                                            info@keramin.by
+                                        </div>
+                                    </div>
+                                    <div class="contacts__half">
+                                        <div class="contacts__address">
+                                            г. Барановичи,<br> ул. Комсомольская, 5
+                                        </div>
+                                        <a href="img/svg/logo.svg" class="contacts__download" download>Скачать реквизиты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__in">
+                                <div class="contacts__title">Отдел маркетинга</div>
+                                <div class="contacts__info">
+                                    <div class="contacts__half">
+                                        <div class="contacts__phones">
+                                            <div class="contacts__phone">+375 (163) 66-97-63</div>
+                                            <div class="contacts__phone">+375 (163) 66-97-62</div>
+                                        </div>
+                                        <div class="contacts__mail">
+                                            marketing@keramin.by
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__in">
+                                <div class="contacts__title">Бухгалтерия</div>
+                                <div class="contacts__info">
+                                    <div class="contacts__half">
+                                        <div class="contacts__phones">
+                                            <div class="contacts__phone">+375 (163) 66-97-63</div>
+                                            <div class="contacts__phone">+375 (163) 66-97-62</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__in">
+                                <div class="contacts__title">Экспорт керамической плитки и керамогранита</div>
+                                <div class="contacts__info">
+                                    <div class="contacts__half">
+                                        <div class="contacts__mail">
+                                            marketing@keramin.by
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__in">
+                                <div class="contacts__title">Продажи в Республике Беларусь</div>
+                                <div class="contacts__info">
+                                    <div class="contacts__half">
+                                        <div class="contacts__mail">
+                                            marketing@keramin.by
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__in">
+                                <div class="contacts__title">Экспорт санитарной керамики</div>
+                                <div class="contacts__info">
+                                    <div class="contacts__half">
+                                        <div class="contacts__mail">
+                                            marketing@keramin.by
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__in">
+                                <div class="contacts__title">Керамический кирпич</div>
+                                <div class="contacts__info">
+                                    <div class="contacts__half">
+                                        <div class="contacts__mail">
+                                            marketing@keramin.by
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-map-wrap">
+                    <div id="map" class="page-map">
+
+                    </div>
+                </div>
+				<!-- END CONTENT -->
+			</div>
+		</main>
+	</div><!-- END LAYOUT-->
+	//= template/footer.html
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/libs/libs.min.js"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.files{
+    
+}
+.files__pre{
+    font-size: 16px;
+    margin-bottom: 59px;
+}
+.files__list{
+    padding: 0 0 0 18px;
+}
+.files__item{
+    background: #fff;
+    margin-bottom: 13px;
+    padding: 21px 23px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.files__link{
+    font-size: 18px;
+    color: #000000;
+    transition: all .3s ease;
+    &:before{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 19px;
+        height: 23px;
+        background: url(../img/svg/download.svg) center no-repeat;
+        margin-right: 8px;
+    }
+    &:hover{
+        color: #f4004d;
+    }
+}
+.files__size{
+    color: #BDC3C6;
+}

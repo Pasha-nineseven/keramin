@@ -1,0 +1,206 @@
+.contacts{
+    border: 1px solid #ded3d6;
+    padding: 18px 32px 6px;
+    margin-bottom: 30px;
+}
+.contacts__top{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #DED3D6;
+    padding: 0 32px 18px;
+    margin-bottom: 32px;
+}
+.contacts-select{
+    font-size: 22px;
+    font-family: 'acrombold';
+    position: relative;
+}
+.contacts__list{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0 -12.5px;
+}
+.contacts__item{
+    width: 50%;
+    padding: 0 12.5px;
+    margin-bottom: 25px;
+}
+.contacts__in{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 29px 32px 30px 32px;
+}
+.contacts__title{
+    font-size: 22px;
+    line-height: 1;
+    font-family: 'acrombold';
+    padding-bottom: 13px;
+    margin-bottom: 20px;
+    position: relative;
+    &:after{
+        content: "";
+        display: inline-block;
+        width: 50px;
+        height: 1px;
+        background: #F4004D;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+.contacts__info{
+    display: flex;
+    flex-wrap:wrap;
+}
+.contacts__half{
+    width: 50%;
+}
+
+.contacts__phone,
+.contacts__address{
+    font-size: 16px;
+}
+.contacts__phones{
+    margin-bottom: 20px;
+    line-height: 1.1;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.contacts__address{
+    margin-bottom: 31px;
+    line-height: 1.1;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.contacts__phone{
+    margin-bottom: 12px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.contacts__mail{
+    font-size: 16px;
+    line-height: 1.1;
+}
+.contacts__download{
+    color: #000;
+    padding-left: 28px;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s ease;
+    &:before{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 19px;
+        height: 23px;
+        background: url(../img/svg/download.svg) center no-repeat;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &:hover{
+        color: #f4004d;
+    }
+}
+
+.page-map-wrap{
+    position: relative;
+    width: 100%;
+    height: 502px;
+}
+.page-map{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts-select__t{
+    position: relative;
+    color: #000;
+    padding-right: 20px;
+    transition: all .3s ease;
+    &:after{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 6px;
+        background: url(../img/svg/arr.svg) center/cover no-repeat;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 2px;
+        transition: all .3s ease;
+    }
+    &:hover{
+        color: #f4004d;
+    }
+    &.active{
+        color: #f4004d;
+        &:after{
+            transform: translateY(-50%) rotate(-180deg);
+        }
+    }
+}
+
+.contacts-select__list{
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
+    // opacity: 0;
+    // visibility: hidden;
+    display: none;
+    transition: all .3s ease;
+    min-width: 280px;
+    z-index: 2;
+    &:before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 15px;
+        top: -15px;
+        left: 0;
+        position: absolute;
+    }
+}
+.contacts-select__wrap{
+    padding: 21px 28px;
+}
+.contacts-select__item{
+    margin: 0 0 17px 0;
+    border-bottom: 1px solid #F3EFF1;
+    &:last-child{
+        margin-bottom: 0;
+        border-bottom: 0;
+        .contacts-select__link{
+            padding-bottom: 0;
+        }
+    }
+}
+.contacts-select__link{
+    font-size: 16px;
+    font-family: 'acromregular';
+    color: #000;
+    line-height: 1.2;
+    display: block;
+    transition: all .3s ease;
+    padding-bottom: 15px;
+    &.active{
+        font-family: 'acrombold';
+    }
+    &:hover{
+        color: #f4004d;
+    }
+}

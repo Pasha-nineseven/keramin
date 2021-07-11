@@ -1,0 +1,208 @@
+.where{
+    .r-tabs{
+        .r-tabs-nav{
+            border: 1px solid #DED3D6;
+            border-bottom: 0;
+            padding: 20px 32px 0 32px;
+            position: relative;
+            &:after{
+                content: "";
+                display: inline-block;
+                height: 1px;
+                width: calc(100% - 64px);
+                position: absolute;
+                left: 32px;
+                bottom: -1px;
+                background: #DED3D6;
+            }
+        }
+        .r-tabs-panel{
+            padding: 0;
+        }
+        li{
+            a{
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 17px;
+                z-index: 1;
+            }
+        }
+    }
+    .page-map-wrap{
+        height: 590px;
+    }
+}
+
+.page-map-about{
+    background: #fff;
+    padding: 32px 34px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    width: 412px;
+    font-size: 16px;
+    line-height: 1.2;
+    h5{
+        margin-bottom: 23px;
+    }
+}
+.page-map-about__item{
+    margin-bottom: 24px;
+    padding-left: 33px;
+    position: relative;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.page-map-about-phones__item{
+    margin-bottom: 10px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.page-map-about-phones{
+    position: relative;
+    &:before{
+        content: "";
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        position: absolute;
+        left: -34px;
+        top: 1px;
+        background: url(../img/svg/c-phone.svg) center/cover no-repeat;
+    }
+}
+.page-map-about-mail{
+    position: relative;
+    &:before{
+        content: "";
+        display: inline-block;
+        width: 19px;
+        height: 14px;
+        position: absolute;
+        left: -34px;
+        top: 3px;
+        background: url(../img/svg/c-mail.svg) center/cover no-repeat;
+    }
+}
+.page-map-about-address{
+    position: relative;
+    &:before{
+        content: "";
+        display: inline-block;
+        width: 19px;
+        height: 24px;
+        position: absolute;
+        left: -34px;
+        top: -2px;
+        background: url(../img/svg/c-address.svg) center/cover no-repeat;
+    }
+}
+.page-map-about-time{
+    position: relative;
+    &:before{
+        content: "";
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        position: absolute;
+        left: -34px;
+        top: 2px;
+        background: url(../img/svg/c-time.svg) center/cover no-repeat;
+    }
+}
+
+.select-add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    padding: 26px 24px 22px;
+    border: 1px solid #ded3d6;
+    border-top: 0;
+}
+.select-add__item{
+    margin-right: 40px;
+    font-size: 16px;
+    position: relative;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+
+.select-add__link{
+    position: relative;
+    color: #000;
+    padding-right: 16px;
+    transition: all .3s ease;
+    &:after{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 6px;
+        background: url(../img/svg/arr.svg) center/cover no-repeat;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 2px;
+        transition: all .3s ease;
+    }
+    &.active{
+        color: #f4004d;
+        &:after{
+            background: url(../img/svg/arr-h.svg) center/cover no-repeat;
+            transform: translateY(-50%) rotate(-180deg);
+        }
+    }
+    &:hover{
+        color: #f4004d;
+    }
+}
+.select-add-sub{
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
+    // opacity: 0;
+    // visibility: hidden;
+    display: none;
+    transition: all .3s ease;
+    min-width: 280px;
+    z-index: 2;
+} 
+.select-add-sub__wrap{
+    padding: 21px 28px;
+}
+
+
+.select-add-sub__link{
+    display: block;
+    margin: 0 0 17px 0;
+    border-bottom: 1px solid #F3EFF1;
+    font-size: 16px;
+    font-family: 'acromregular';
+    color: #000;
+    line-height: 1.2;
+    display: block;
+    transition: all .3s ease;
+    padding-bottom: 15px;
+    &:last-child{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+        .contacts-select__link{
+            padding-bottom: 0;
+        }
+    }
+    &:hover{
+        color: #f4004d;
+    }
+}
