@@ -312,6 +312,7 @@
 	padding: 40px 0;
 	position: relative;
 	z-index: 2;
+	overflow: hidden;
 	&:after{
 		content: "";
 		display: block;
@@ -347,7 +348,7 @@
 
 .index-view__txt{
 	position: static!important;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 
 .index-view__bg{
