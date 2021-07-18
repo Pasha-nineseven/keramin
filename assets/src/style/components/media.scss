@@ -752,6 +752,25 @@
     .index-view__txt {
         margin-bottom: 20px;
     }
+    .slider-default figure.page-img {
+        height: 265px;
+    }
+    .slider-default .slick-dots {
+        top: 240px;
+    }
+    .slider-default .slick-arrow{
+        top: 105px;
+    }
+    .slider-default .slick-next {
+        right: 10px;
+    }
+    .slider-default .slick-prev {
+        left: 10px;
+    }
+    .layout.m-404 {
+        background: url(../img/content/bg-404.png) center 75% no-repeat;
+        background-size: 60%;
+    }
 }
 
 @media screen and (max-width: 700px){
@@ -1123,6 +1142,21 @@
     }
     .page-header-lang{
         top: 20px;
+    }
+    .page-404__pre {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .layout.m-404 {
+        background: url(../img/content/bg-404.png) center 75% no-repeat;
+        background-size: 93%;
+    }
+    .page-404__links a {
+        margin: 0 10px 20px 0;
+        white-space: nowrap;
+        &:last-child{
+            margin-right: 0;
+        }
     }
 }
 

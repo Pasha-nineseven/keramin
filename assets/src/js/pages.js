@@ -21,5 +21,6 @@ $('body').append(
 		<li><a href="where.html">Where</a></li> \
 		<li><a href="collection.html">Collection</a></li> \
 		<li><a href="index.html">Index</a></li> \
+		<li><a href="page404.html">404</a></li> \
 	</ol> \
 </div>');

@@ -10,20 +10,6 @@ $(document).ready(function() {
 		$('.page-header').toggleClass('active');
 		$('.top-add').fadeToggle();
 		$('body').toggleClass('fixed');
-		// if( $('body').height() > $(window).height()) {
-         
-		// 	var calculation_content = $('<div style="width:50px;height:50px;overflow:hidden;position:absolute;top:-200px;left:-200px;"><div style="height:100px;"></div>');
-		// 	$('body').append( calculation_content );
-		// 	var width_one = $('div', calculation_content).innerWidth();
-		// 	calculation_content.css('overflow-y', 'scroll');
-		// 	var width_two = $('div', calculation_content).innerWidth();
-		// 	$(calculation_content).remove();
-		// 	//console.log(width_one - width_two);
-		// 	$('body').css('padding-right', width_one - width_two).toggleClass('fixed');
-		// 	return ( width_one - width_two );
-		// } else{
-		// 	$('body').css('padding-right', 'inherit').removeClass('fixed');
-		// }
 	});
 
 	//SEARCH
@@ -217,6 +203,16 @@ $(document).ready(function() {
 
 	if($('.index-top__slider').length>0){
 		$('.index-top__slider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			fade: true,
+			dots: true,
+		});
+	}
+
+	if($('.slider-default').length>0){
+		$('.slider-default').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: true,

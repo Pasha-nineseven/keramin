@@ -1,0 +1,47 @@
+
+.layout{
+    &.m-404{
+        background: url(../img/content/bg-404.png) center 75% no-repeat;
+    }
+}
+.page-404{
+    text-align: center;
+}
+.page-404__pre{
+    font-family: acrombold;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.page-404__links{
+    a{
+        margin: 0 38px 20px 0;
+        font-size: 16px;
+        color: #000;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.page-404__link{
+    &.m-back{
+        padding-left: 25px;
+        position: relative;
+        transition: color .3s ease;
+        &:before{
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 9px;
+            background: url(../img/svg/back.svg) center/cover no-repeat;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &:hover{
+        color: #f4004d;
+    }
+}
