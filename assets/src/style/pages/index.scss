@@ -89,7 +89,14 @@
 						}
 					}
 				}
+				.vision{
+					background: url(../img/svg/vision-w.svg) center/cover no-repeat;
+					&:hover{
+						background: url(../img/svg/vision-h.svg) center/cover no-repeat;
+					}
+				}
 			}
+			
 		}
 		
 		

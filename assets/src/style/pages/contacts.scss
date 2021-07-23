@@ -125,20 +125,16 @@
 .contacts-select__t{
     position: relative;
     color: #000;
-    padding-right: 20px;
     transition: all .3s ease;
     &:after{
         content: "";
         display: inline-block;
+        vertical-align: middle;
         width: 10px;
         height: 6px;
         background: url(../img/svg/arr.svg) center/cover no-repeat;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-top: 2px;
         transition: all .3s ease;
+        margin: -5px 0 0 10px;
     }
     &:hover{
         color: #f4004d;
@@ -188,6 +184,13 @@
             padding-bottom: 0;
         }
     }
+    &.active{
+        
+        pointer-events: none;
+        .contacts-select__link{
+            color: #f4004d;
+        }
+    }
 }
 .contacts-select__link{
     font-size: 16px;
@@ -204,3 +207,4 @@
         color: #f4004d;
     }
 }
+

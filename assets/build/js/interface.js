@@ -114,13 +114,7 @@ $(document).ready(function() {
 		});
 	}
 
-	//MAP
-	if ($('#map').length>0) {
-		ymaps.ready(initializeDefaultMap);
-	}
-	if ($('#points-map').length>0) {
-		ymaps.ready(initializePointsMap);
-	}
+	
 
 	//S-slider
 	if ($( ".structure__slider" ).length>0) {
@@ -267,66 +261,4 @@ function stickyHeader(){
 		
 	if (scroll >= 100) sticky.addClass('fixed');
 	else sticky.removeClass('fixed');
-}
-
-function initializeDefaultMap() {
-	var myMap = new ymaps.Map("map", {
-		center:[53.899888,27.566757],
-		zoom: 13,
-		controls: []
-	}, {
-		suppressMapOpenBlock: true
-	}); 
-			
-	var myPlacemark = new ymaps.Placemark([53.899888,27.566757],{
-			// balloonContentBody: 'Адрес',
-		},{
-		iconLayout: 'default#image',
-		iconImageHref: "img/content/label.png", 
-		iconImageSize: [60,80],
-		iconImageOffset: [0, -75]
-	}); 
-
-
-	myMap.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 20, top: 50 }}}));
-	myMap.behaviors.disable('scrollZoom');
-
-	myMap.geoObjects.add(myPlacemark);
-}
-
-
-function initializePointsMap() {
-	var myMap = new ymaps.Map("points-map", {
-		center:[53.939888,27.596757],
-		zoom: 12,
-		controls: []
-	}, {
-		suppressMapOpenBlock: true
-	}); 
-	myMap.geoObjects
-		.add(new ymaps.Placemark([53.919888,27.576757], {}, {
-			iconLayout: 'default#image',
-			iconImageHref: "img/content/label.png", 
-			iconImageSize: [60,80],
-			iconImageOffset: [0, -75]
-		}))
-		.add(new ymaps.Placemark([53.929888,27.586757], {}, {
-			iconLayout: 'default#image',
-			iconImageHref: "img/content/label.png", 
-			iconImageSize: [60,80],
-			iconImageOffset: [0, -75]
-		}))
-		.add(new ymaps.Placemark([53.939256, 27.483376], {}, {
-			iconLayout: 'default#image',
-			iconImageHref: "img/content/label.png", 
-			iconImageSize: [60,80],
-			iconImageOffset: [0, -75]
-		}))
-
-
-
-	myMap.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 20, top: 50 }}}));
-	myMap.behaviors.disable('scrollZoom');
-
-	//myMap.geoObjects.add(myPlacemark);
 }

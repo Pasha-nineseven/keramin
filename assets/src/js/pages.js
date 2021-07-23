@@ -9,7 +9,9 @@ $('body').append(
 	</style> \
 	<ol id="pages"> \
 		<li><a href="text.html">Text</a></li> \
+		<li><a href="text-aside.html">Text-aside</a></li> \
 		<li><a href="catalog.html">Catalog</a></li> \
+		<li><a href="catalog-aside.html">Catalog-aside</a></li> \
 		<li><a href="product.html">Product</a></li> \
 		<li><a href="objects.html">Objects</a></li> \
 		<li><a href="news.html">News</a></li> \
@@ -22,5 +24,6 @@ $('body').append(
 		<li><a href="collection.html">Collection</a></li> \
 		<li><a href="index.html">Index</a></li> \
 		<li><a href="page404.html">404</a></li> \
+		<li><a href="engineering.html">Engineering</a></li> \
 	</ol> \
 </div>');

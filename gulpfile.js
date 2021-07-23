@@ -107,6 +107,9 @@ gulp.task('js:build', function () {
     return gulp.src([
             path.src.js,
             'assets/src/js/pages.js',
+            'assets/src/js/contacts-map.js',
+            'assets/src/js/whereCities.js',
+            'assets/src/js/wherePoints.js',
         ]) // получим файл interface.js
         .pipe(plumber()) // для отслеживания ошибок
         .pipe(rigger()) // импортируем все указанные файлы в interface.js

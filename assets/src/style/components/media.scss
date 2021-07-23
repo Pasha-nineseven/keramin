@@ -44,6 +44,10 @@
     .index-view__title h2{
         font-size: 30px;
     }
+    .aside {
+        width: 300px;
+        min-width: 300px;
+    }
 }
 
 @media screen and (max-width: 1100px){
@@ -256,7 +260,7 @@
     }
     .page-map-about {
         padding: 20px;
-        width: 320px;
+        min-width: 320px;
     }
     .page-map-about__item {
         margin-bottom: 10px;
@@ -267,6 +271,16 @@
     .page-map-about h5 {
         margin-bottom: 15px;
         font-size: 17px;
+    }
+    .aside{
+        display: none;
+    }
+    .aside-mobile{
+        display: block;
+        margin-bottom: 30px;
+    }
+    .aside__item {
+        padding: 8px 0;
     }
 }
 
@@ -771,6 +785,50 @@
         background: url(../img/content/bg-404.png) center 75% no-repeat;
         background-size: 60%;
     }
+    .vision{
+        right: 0;
+        left: auto;
+        .page-header.active &{
+            // right: 65px;
+            // pointer-events: all;
+            display: none;
+        }
+    }
+    .engineering-pre {
+        font-size: 18px;
+    }
+    .engineering-phone{
+        font-size: 18px;
+        text-align: left;
+        &:before{
+            top: 2px;
+        }
+    }
+    .engineering-mail{
+        font-size: 18px;
+        &:before{
+            top: 3px;
+        }
+    }
+    .layout.m-engineering:before,
+    .layout.m-engineering:after{
+        width: 213px;
+        height: 375px;
+    }
+    .layout.m-aside .item-complex.m-three .item-complex__item{
+        width: 100%;
+    }
+    .contacts-select {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .contacts__top {
+        padding: 0 0 18px;
+    }
+    .contacts__title{
+        font-size: 18px;
+    }
+    
 }
 
 @media screen and (max-width: 700px){
@@ -1158,6 +1216,12 @@
             margin-right: 0;
         }
     }
+    .layout.m-engineering:after{
+        display: none;
+    }
+    .layout.m-aside .catalog__item {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -1171,6 +1235,7 @@
         width: 100%;
     }
     .page-map-about {
+        min-width: inherit;
         width: 100%;
     }
 }

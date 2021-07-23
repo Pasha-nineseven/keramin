@@ -636,3 +636,153 @@ a.breadcrumbs__item{
 		}
 	}
 }
+
+.layout{
+	&.m-aside{
+		.page-content{
+			>.container-fluid{
+				display: flex;
+			}
+		}
+		.catalog__item {
+			width: 50%;
+		}
+		.page-header{
+			border-bottom: 1px solid #f3eff0;
+		}
+		&+.page-footer{
+			border-top: 2px solid #f3eff0;
+			position: relative;
+		}
+		.page-item {
+			flex-wrap: wrap;
+		}
+		.page-item__img,
+		.page-item__txt{
+			width: 100%;
+		}
+		.page-item__img{
+			margin-bottom: 20px;
+		}
+		.page-item__img img{
+			margin-bottom: 0;
+		}
+		.page-item.m-img-left .page-item__txt{
+			padding-left: 0;
+		}
+		.page-item.m-img-right .page-item__img {
+			order: 1;
+			img{
+				margin-bottom: 0;
+			}
+		}
+		.page-form__wrap {
+			margin: 0 0 30px;
+			flex-wrap: wrap;
+		}
+		.page-form__item {
+			width: 100%;
+			padding: 0;
+		}
+		.page-form__area:last-child {
+			margin-bottom: 30px;
+		}
+		.item-complex {
+			flex-wrap: wrap;
+		}
+		.item-complex.m-three .item-complex__item {
+			width: 50%;
+			margin-bottom: 30px;
+		}
+		.contact-form, .page-form {
+			padding: 30px;
+			margin-bottom: 40px;
+		}
+		.contact-form__wrap {
+			flex-wrap: wrap;
+		}
+		.contact-form__pre {
+			margin: 0 0 20px 0;
+			width: 100%;
+		}
+		.contact-form__view {
+			width: 100%;
+		}
+	}
+}
+.content-part{
+	overflow: hidden;
+}
+.aside{
+	width: 376px;
+	min-width: 376px;
+	background: #fff;
+	margin-right: 24px;
+	position: relative;
+	
+	&:before{
+		content: "";
+		display: block;
+		width: 50vw;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: #fff;
+	}
+	h4{
+		margin-bottom: 9px;
+	}
+}
+.aside__in{
+	position: relative;
+	height: 100%;
+	padding-right: 24px;
+	&:before{
+		content: "";
+		display: block;
+		width: 50vw;
+		height: 300px;
+		position: absolute;
+		bottom: 100%;
+		right: 0;
+		background: #fff;
+	}
+	&:after{
+		content: "";
+		display: block;
+		width: 50vw;
+		height: 300px;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		background: #fff;
+	}
+}
+
+.aside__link{
+	font-size: 16px;
+	color: #000000;
+	transition: color .3s ease;
+	&:hover{
+		color: #F4004D;
+	}
+	&.active{
+		color: #F4004D;
+		pointer-events: none;
+	}
+}
+.aside__item{
+	border-bottom: 1px solid rgba(213,213,213,0.2);
+	padding: 22px 0;
+}
+
+.aside-mobile{
+	display: none;
+	background: #fff;
+    padding: 20px;
+}
+
+.dnone{
+    display: none!important;
+}

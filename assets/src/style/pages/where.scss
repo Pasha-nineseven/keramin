@@ -36,11 +36,12 @@
 .page-map-about{
     background: #fff;
     padding: 32px 34px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    // position: absolute;
+    // bottom: 0;
+    // right: 0;
     z-index: 3;
     width: 412px;
+    min-width: 412px;
     font-size: 16px;
     line-height: 1.2;
     h5{
@@ -205,6 +206,10 @@
     &:hover{
         color: #f4004d;
     }
+    &.active{
+        color: #f4004d;
+        pointer-events: none;
+    }
 }
 
 
@@ -214,4 +219,45 @@
         padding: 0;
         width: 100%;
     }
+}
+
+ymaps[class*="-balloon__tail"]{
+    display: none!important;
+}
+ymaps[class*="-balloon"]{
+    box-shadow: none!important;
+    top: auto!important;
+    left: auto!important;
+    right: 0!important;
+    bottom: 0!important;
+}
+ymaps[class*="-balloon__content"]{
+    margin-right: 0!important;
+    padding: 0!important;
+    ymaps{
+        overflow: hidden!important;
+    }
+}
+
+ymaps[class*="-balloon-pane"]{
+    top: auto!important;
+    bottom: 0!important;
+    right: 0!important;
+    left: auto!important;
+    transform: none!important;
+    //pointer-events: none;
+}
+ymaps[class*="-balloon-overlay"]{
+    // left: 0!important;
+    // top: 0!important;
+    //pointer-events: none;
+    // width: 100%!important;
+    // height: 100%!important;
+    //position: relative!important;
+    // left: 0!important;
+    // top: 0!important;
+}
+
+ymaps[class*="-ground-pane"]{
+
 }

@@ -35,30 +35,39 @@
                                     <a href="#" class="select-add__link js-select-toggle">Беларусь</a>
                                     <div class="select-add-sub">
                                         <div class="select-add-sub__wrap">
-                                            <a href="#" class="select-add-sub__link">Россия</a>
-                                            <a href="#" class="select-add-sub__link">Украина</a>
-                                            <a href="#" class="select-add-sub__link">Казахстан</a>
-                                            <a href="#" class="select-add-sub__link">Литва</a>
+                                            <a href="#" class="select-add-sub__link js-partners-country active" data-country="belarus" data-lat="53.1322925" data-long="26.0184156" data-map="1">Беларусь</a>
+                                            <a href="#" class="select-add-sub__link js-partners-country" data-country="russia" data-lat="55.75" data-long="37.6167" data-map="11">Россия</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="select-add__item">
+                                <div class="select-add__item select-add-city" data-country="belarus">
                                     <a href="#" class="select-add__link js-select-toggle">Барановичи</a>
                                     <div class="select-add-sub">
                                         <div class="select-add-sub__wrap">
-                                            <a href="#" class="select-add-sub__link">Минск</a>
-                                            <a href="#" class="select-add-sub__link">Брест</a>
-                                            <a href="#" class="select-add-sub__link">Гродно</a>
-                                            <a href="#" class="select-add-sub__link">Могилев</a>
+                                            <a href="#" class="select-add-sub__link js-partners-city active" data-lat="53.1322925" data-long="26.0184156" data-map="1">Барановичи</a>
+                                            <a href="#" class="select-add-sub__link js-partners-city" data-lat="53.902334" data-long="27.5618791" data-map="2">Минск</a>
+                                            <a href="#" class="select-add-sub__link js-partners-city" data-lat="52.093751" data-long="23.6851851" data-map="3">Брест</a>
+                                            <a href="#" class="select-add-sub__link js-partners-city" data-lat="53.65430386256685" data-long="23.81561279296875" data-map="4">Гродно</a>
+                                            <a href="#" class="select-add-sub__link js-partners-city" data-lat="53.897662927123974" data-long="30.293769836425785" data-map="5">Могилев</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="select-add__item">
-                                    <a href="#" class="btn">Показать на карте</a>
+                                <div class="select-add__item select-add-city dnone" data-country="russia">
+                                    <a href="#" class="select-add__link js-select-toggle">Москва</a>
+                                    <div class="select-add-sub">
+                                        <div class="select-add-sub__wrap">
+                                            <a href="#" class="select-add-sub__link js-partners-city active" data-lat="55.75" data-long="37.6167" data-map="11">Москва</a>
+                                            <a href="#" class="select-add-sub__link js-partners-city" data-lat="59.84481485969108" data-long="30.234375000000004" data-map="22">Санкт-Петербург</a>
+                                            <a href="#" class="select-add-sub__link js-partners-city" data-lat="56.9984452" data-long="40.9737394" data-map="33">Иваново</a>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!-- <div class="select-add__item">
+                                    <a href="#" class="btn">Показать на карте</a>
+                                </div> -->
                             </div>
                             <div class="select-cards">
-                                <div class="contacts__list">
+                                <div class="contacts__list" id="map1">
                                     <div class="contacts__item">
                                         <div class="contacts__in">
                                             <div class="page-map-about">
@@ -135,6 +144,747 @@
                                                             <div class="page-map-about__item">
                                                                 <div class="page-map-about-address">
                                                                     г. Барановичи, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map2">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Минск»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Минск, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Минск»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Минск, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Минск»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Минск, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map3">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Брест</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Брест, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Брест</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Барановичи, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map4">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Гродно</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Гродно, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Гродно</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Гродно, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map5">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Могилев</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Могилев, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Могилев</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Могилев, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contacts__list dnone" id="map11">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Москва»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. «Москва», ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Москва 2»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. «Москва, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map22">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Санкт-Петербург</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Санкт-Петербург, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Санкт-Петербург 2»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Санкт-Петербург, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map33">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Иваново</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Иваново, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Иваново 2»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Иваново, ул. Комсомольская, 5
                                                                 </div>
                                                             </div>
                                                             <div class="page-map-about__item">
@@ -162,44 +912,6 @@
 
                             <div class="page-map-wrap">
                                 <div id="map" class="page-map"> </div>
-                                <div class="page-map-about">
-                                    <h5>Магазин<br> «Керамин-Барановичи»</h5>
-                                    <div class="page-map-about__list">
-                                        <div class="page-map-about__item">
-                                            <div class="page-map-about-phones">
-                                                <div class="page-map-about-phones__item">
-                                                    +375 (163) 66-97-63
-                                                </div>
-                                                <div class="page-map-about-phones__item">
-                                                    +375 (163) 66-97-62
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="page-map-about__item">
-                                            <div class="page-map-about-mail">
-                                                info@keramin.by
-                                            </div>
-                                        </div>
-                                        <div class="page-map-about__item">
-                                            <div class="page-map-about-address">
-                                                г. Барановичи, ул. Комсомольская, 5
-                                            </div>
-                                        </div>
-                                        <div class="page-map-about__item">
-                                            <div class="page-map-about-time">
-                                                <div class="page-map-about-time__item">
-                                                    <span>пн-пт:</span> 10:00-20:00
-                                                </div>
-                                                <div class="page-map-about-time__item">
-                                                    <span>сб:</span> 10:00-18:00
-                                                </div>
-                                                <div class="page-map-about-time__item">
-                                                    <span>вс:</span> 10:00-16:00
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div id="tab-2">
@@ -208,28 +920,881 @@
                                     <a href="#" class="select-add__link js-select-toggle">Беларусь</a>
                                     <div class="select-add-sub">
                                         <div class="select-add-sub__wrap">
-                                            <a href="#" class="select-add-sub__link">Россия</a>
-                                            <a href="#" class="select-add-sub__link">Украина</a>
-                                            <a href="#" class="select-add-sub__link">Казахстан</a>
-                                            <a href="#" class="select-add-sub__link">Литва</a>
+                                            <a href="#" class="select-add-sub__link js-points-country active" data-country="belarus" data-lat="53.1322925" data-long="26.0184156" data-map="55">Беларусь</a>
+                                            <a href="#" class="select-add-sub__link js-points-country" data-country="russia" data-lat="55.75" data-long="37.6167" data-map="60">Россия</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="select-add__item">
+                                <div class="select-add__item select-add-city" data-country="belarus">
                                     <a href="#" class="select-add__link js-select-toggle">Барановичи</a>
                                     <div class="select-add-sub">
                                         <div class="select-add-sub__wrap">
-                                            <a href="#" class="select-add-sub__link">Минск</a>
-                                            <a href="#" class="select-add-sub__link">Брест</a>
-                                            <a href="#" class="select-add-sub__link">Гродно</a>
-                                            <a href="#" class="select-add-sub__link">Могилев</a>
+                                            <a href="#" class="select-add-sub__link js-points-city active" data-lat="53.1322925" data-long="26.0184156" data-map="55">Барановичи</a>
+                                            <a href="#" class="select-add-sub__link js-points-city" data-lat="53.902334" data-long="27.5618791" data-map="56">Минск</a>
+                                            <a href="#" class="select-add-sub__link js-points-city" data-lat="52.093751" data-long="23.6851851" data-map="57">Брест</a>
+                                            <a href="#" class="select-add-sub__link js-points-city" data-lat="53.65430386256685" data-long="23.81561279296875" data-map="58">Гродно</a>
+                                            <a href="#" class="select-add-sub__link js-points-city" data-lat="53.897662927123974" data-long="30.293769836425785" data-map="59">Могилев</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="select-add__item">
+                                <div class="select-add__item select-add-city dnone" data-country="russia">
+                                    <a href="#" class="select-add__link js-select-toggle">Москва</a>
+                                    <div class="select-add-sub">
+                                        <div class="select-add-sub__wrap">
+                                            <a href="#" class="select-add-sub__link js-points-city active" data-lat="55.75" data-long="37.6167" data-map="60">Москва</a>
+                                            <a href="#" class="select-add-sub__link js-points-city" data-lat="59.84481485969108" data-long="30.234375000000004" data-map="61">Санкт-Петербург</a>
+                                            <a href="#" class="select-add-sub__link js-points-city" data-lat="56.9984452" data-long="40.9737394" data-map="62">Иваново</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="select-add__item">
                                     <a href="#" class="btn">Показать на карте</a>
+                                </div> -->
+                            </div>
+                            <div class="select-cards">
+                                <div class="contacts__list" id="map55">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Барановичи»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Барановичи, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Барановичи»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Барановичи, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map56">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Минск»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Минск, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Минск»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Минск, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Минск»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Минск, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map57">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Брест</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Брест, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Брест</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Барановичи, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map58">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Гродно</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Гродно, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Гродно</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Гродно, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map59">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Могилев</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Могилев, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Керамин-Могилев</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Могилев, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="contacts__list dnone" id="map60">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Москва»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. «Москва», ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин «Москва 2»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. «Москва, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map61">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Санкт-Петербург</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Санкт-Петербург, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Санкт-Петербург 2»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Санкт-Петербург, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__list dnone" id="map62">
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Иваново</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Иваново, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__in">
+                                            <div class="page-map-about">
+                                                <h5>Магазин Иваново 2»</h5>
+                                                <div class="page-map-about__list">
+                                                    <div class="contacts__info">
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-phones">
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-63
+                                                                    </div>
+                                                                    <div class="page-map-about-phones__item">
+                                                                        +375 (163) 66-97-62
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-mail">
+                                                                    info@keramin.by
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts__half">
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-address">
+                                                                    г. Иваново, ул. Комсомольская, 5
+                                                                </div>
+                                                            </div>
+                                                            <div class="page-map-about__item">
+                                                                <div class="page-map-about-time">
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>пн-пт:</span> 10:00-20:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>сб:</span> 10:00-18:00
+                                                                    </div>
+                                                                    <div class="page-map-about-time__item">
+                                                                        <span>вс:</span> 10:00-16:00
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        
                             <div class="page-map-wrap">
                                 <div id="points-map" class="page-map"> </div>
                             </div>
@@ -246,6 +1811,8 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script src="js/libs/libs.min.js"></script>
 	<script src="js/interface.js"></script>
+    <script src="js/whereCities.js"></script>
+    <script src="js/wherePoints.js"></script>
 	<script src="js/pages.js"></script>
 </body>
 </html>

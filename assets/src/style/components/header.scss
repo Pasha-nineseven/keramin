@@ -361,3 +361,18 @@
 		}
 	}
 }
+
+.vision{
+	display: inline-block;
+	width: 46px;
+	height: 14px;
+	background: url(../img/svg/vision.svg) center/cover no-repeat;
+	position: absolute;
+	left: 0;
+	top: 50%;
+    transform: translateY(-50%);
+	transition: background .3s ease;
+	&:hover{
+		background: url(../img/svg/vision-h.svg) center/cover no-repeat;
+	}
+}
